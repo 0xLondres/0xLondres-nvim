@@ -67,5 +67,8 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- Wl-copy and wl-paste
+vim.opt.clipboard = "unnamedplus"
+
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

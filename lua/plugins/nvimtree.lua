@@ -21,7 +21,7 @@ return {
 				preserve_window_proportions = true,
 			},
 			renderer = {
-				root_folder_label = false,
+				root_folder_label = true,
 				highlight_git = true,
 				indent_markers = { enable = true },
 				icons = {
