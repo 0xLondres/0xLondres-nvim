@@ -27,7 +27,7 @@ return {
 				settings = {
 					Lua = {
 						diagnostics = {
-							globals = { "vim" },
+							globals = { "vim", "hl" },
 						},
 					},
 				},
@@ -63,6 +63,16 @@ return {
 				capabilities = capabilities,
 			}
 
+			vim.lsp.config.asm_lsp = {
+				capabilities = capabilities,
+			}
+
+			vim.lsp.config.qmlls = {
+				capabilities = capabilities,
+				cmd = { "qmlls6" },
+				filetypes = { "qml" },
+			}
+
 			vim.lsp.enable({
 				"lua_ls",
 				"pyright",
@@ -70,6 +80,8 @@ return {
 				"texlab",
 				"marksman",
 				"bashls",
+				"asm_lsp",
+				"qmlls",
 			})
 
 			vim.diagnostic.config({

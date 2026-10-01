@@ -14,15 +14,18 @@ return {
 			sync_root_with_cwd = true,
 			update_focused_file = {
 				enable = true,
-				update_root = false,
+				update_root = {
+					enable = false,
+					ignore_list = {},
+				},
 			},
 			view = {
 				width = 30,
 				preserve_window_proportions = true,
 			},
 			renderer = {
-				root_folder_label = true,
-				highlight_git = true,
+				root_folder_label = ":t",
+				highlight_git = "name",
 				indent_markers = { enable = true },
 				icons = {
 					glyphs = {

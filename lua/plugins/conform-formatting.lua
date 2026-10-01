@@ -13,6 +13,7 @@ return {
 				sh = { "shfmt" },
 				zsh = { "shfmt" },
 				markdown = { "mdformat" },
+				qml = { "qmlformat" },
 			},
 			format_on_save = {
 				lps_fallback = true,
